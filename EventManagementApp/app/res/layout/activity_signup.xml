@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEB3B"
+    tools:context=".SignupActivity">
+    <TextView
+
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Signup"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"/>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:layout_margin="8dp"
+        android:padding="12dp">
+        <TableRow
+            android:id="@+id/rowName">
+
+            <TextView
+                android:text="Name"
+                android:textSize="16dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowEmail">
+            <TextView
+                android:text="Email"
+                android:textSize="16dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowPhone">
+            <TextView
+                android:text="Phone"
+                android:textSize="16dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="User ID"
+                android:textSize="16dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/etUID"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow>
+            <TextView
+                android:text="Password"
+                android:textSize="16dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/etpass"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/rowRepass">
+            <TextView
+                android:text="Re-Enter Password"
+                android:textSize="16dp"
+                android:layout_marginRight="8dp"/>
+
+            <EditText
+                android:id="@+id/etRepass"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </TableRow>
+
+        <CheckBox
+            android:id="@+id/cbRememberUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember User Id"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <CheckBox
+            android:id="@+id/cbRememberLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Remember Login"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvToggleLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account?"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnToggle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="Login"
+                android:textColor="#E12929"
+                android:backgroundTint="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+    </TableLayout>
+
+    <!--bottom Panel-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Exit"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="@color/black" />
+        <Button
+            android:id="@+id/btnGo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="Go"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="#FFEB3B"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+</LinearLayout>
